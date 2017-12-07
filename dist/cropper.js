@@ -277,9 +277,11 @@ function isCrossOriginURL(url) {
  * @returns {string} The result URL.
  */
 function addTimestamp(url) {
-  var timestamp = 'timestamp=' + new Date().getTime();
+  // var timestamp = 'timestamp=' + new Date().getTime();
 
-  return url + (url.indexOf('?') === -1 ? '?' : '&') + timestamp;
+  // return url + (url.indexOf('?') === -1 ? '?' : '&') + timestamp;
+  
+  return url;
 }
 
 /**
