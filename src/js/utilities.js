@@ -98,9 +98,11 @@ export function isCrossOriginURL(url) {
  * @returns {string} The result URL.
  */
 export function addTimestamp(url) {
-  const timestamp = `timestamp=${(new Date()).getTime()}`;
+  // const timestamp = `timestamp=${(new Date()).getTime()}`;
 
-  return (url + (url.indexOf('?') === -1 ? '?' : '&') + timestamp);
+  // return (url + (url.indexOf('?') === -1 ? '?' : '&') + timestamp);
+  
+  return url;
 }
 
 /**
